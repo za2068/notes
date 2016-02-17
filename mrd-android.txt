@@ -1,0 +1,8 @@
+到工程主目录下:$ source ./build/envsetup.sh
+lunch cht_cr_mrd-eng
+make flashfiles –j8
+
+
+adb reboot bootloader
+fastboot flash boot boot.img
+fastboot continue
