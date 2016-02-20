@@ -6,3 +6,8 @@ make flashfiles –j8
 adb reboot bootloader
 fastboot flash boot boot.img
 fastboot continue
+
+
+
+安装大量包:
+sudo apt-get install `cat list.pkg ubuntu-dev-pkgs.list.txt | sort | uniq -u`
